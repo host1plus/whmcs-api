@@ -1,0 +1,22 @@
+{
+    "name": "Host1Plus Reseller Addon Module for WHMCS Billing System",
+    "repositories": [
+        {
+            "url":  "https://github.com/host1plus/lib.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "reseller/lib":      ">=1.0.0",
+        "guzzlehttp/guzzle": "^6.1",
+        "php":               ">=7.0.0",
+        "ext-intl":          "*",
+        "ext-gettext":       "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "Controllers",
+            "Views\\": "Views"
+        }
+    }
+}
